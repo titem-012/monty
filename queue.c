@@ -39,7 +39,7 @@ if (!aux)
 {
 *head = new_node;
 new_node->prev = NULL;
-} 
+}
 else
 {
 aux->next = new_node;
