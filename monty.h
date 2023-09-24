@@ -21,9 +21,10 @@
  */
 typedef struct arg_s
 {
-  int arg;
-  int flag;
-} arg_t;
+int arg;
+int flag;
+}
+arg_t;
 
 extern arg_t arg;
 
@@ -38,10 +39,11 @@ extern arg_t arg;
  */
 typedef struct stack_s
 {
-  int n;
-  struct stack_s *prev;
-  struct stack_s *next;
-} stack_t;
+int n;
+struct stack_s *prev;
+struct stack_s *next;
+}
+stack_t;
 
 /**
  * struct instruction_s - opcode and its function.
@@ -52,9 +54,10 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-  char *opcode;
-  void (*f)(stack_t **stack, unsigned int line_number);
-} instruction_t;
+char *opcode;
+void (*f)(stack_t **stack, unsigned int line_number);
+}
+instruction_t;
 
 /**
  * struct meta_s - contents of file and buffer data.
@@ -64,13 +67,14 @@ typedef struct instruction_s
  */
 typedef struct meta_s
 {
-  char *buf;
-  stack_t *stack;
-  FILE *file;
-} meta_t;
+char *buf;
+stack_t *stack;
+FILE *file;
+}
+meta_t;
 
 /**
- * struct line - contents of a line and number.
+ * struct line_s - contents of a line and number.
  * @content: array of tokens read from line.
  * @number: line number.
  *
@@ -78,9 +82,10 @@ typedef struct meta_s
  */
 typedef struct line_s
 {
-  char **content;
-  unsigned int number;
-} line_t;
+char **content;
+unsigned int number;
+}
+line_t;
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 /* Critical functions */
