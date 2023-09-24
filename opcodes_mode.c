@@ -9,10 +9,10 @@
  */
 void addst(stack_t **stack, unsigned int nline)
 {
-  (void)nline;
-  (void)stack;
+(void)nline;
+(void)stack;
 
-  arg.flag = 0;
+arg.flag = 0;
 }
 
 /**
@@ -24,8 +24,8 @@ void addst(stack_t **stack, unsigned int nline)
  */
 void addqu(stack_t **stack, unsigned int nline)
 {
-  (void)nline;
-  (void)stack;
+(void)nline;
+(void)stack;
 
-  arg.flag = 1;
+arg.flag = 1;
 }
